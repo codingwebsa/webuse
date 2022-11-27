@@ -4,7 +4,7 @@ import Link from "next/link";
 const Websites = ({ data }) => {
   console.log(data);
   return (
-    <div className="grid grid-cols-5 py-8 px-4 gap-4">
+    <div className="grid grid-cols-2 lg:grid-cols-5 py-8 px-4 gap-4">
       {data.map((web) => (
         <Link href={web.url} key={web.url}>
           <div className="flex items-center gap-2">
